@@ -1,4 +1,5 @@
-import ComponentSettings from 'v.components.core'
+import { ComponentSettings } from 'v.components.core'
+
 export default class AccordionSettings extends ComponentSettings {
   /**
      * Constructor
