@@ -1,4 +1,4 @@
-import Component from '../../../component';
+import Component from 'v.components.core';
 import AccordionSettings from './AccordionSettings';
 import AccordionGroup from './AccordionGroup';
 import AccordionConstructor from './AccordionConstructor';
