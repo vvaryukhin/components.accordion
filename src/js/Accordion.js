@@ -3,7 +3,7 @@ import AccordionSettings from './AccordionSettings';
 import AccordionGroup from './AccordionGroup';
 import AccordionConstructor from './AccordionConstructor';
 
-const settings = new AccordionSettings();
+const SettingsInstance = new AccordionSettings();
 
 export default class Accordion extends Component {
   /**
@@ -16,7 +16,7 @@ export default class Accordion extends Component {
    * @toDo replace it with {AccordionsCollection}
    */
   static autoload(settings = {}) {
-    const s = settings.extend(settings);
+    const s = SettingsInstance.extend(settings);
 
     const document = s.get('document');
     const selector = s.get('selector.autoload');
