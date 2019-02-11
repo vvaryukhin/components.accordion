@@ -16,7 +16,8 @@ export default class Accordion extends Component {
    * @toDo replace it with {AccordionsCollection}
    */
   static autoload(settings = {}) {
-    const s = SettingsInstance.extend(settings);
+    SettingsInstance.extend(settings);
+    const s = SettingsInstance;
 
     const document = s.get('document');
     const selector = s.get('selector.autoload');
